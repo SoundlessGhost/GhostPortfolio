@@ -25,7 +25,7 @@ const About = () => {
           Full Stack Developer
         </h3>
         <p className="mx-20 WhoImText relative">
-          I a'm MERN-Stack WEB Developer. I am working with{" "}
+          I a'm MERN Stack WEB Developer. I am working with{" "}
           <span className="text-[#00abf0] text-[16px]  md:text-[18px] font-extrabold">
             React Js
           </span>
