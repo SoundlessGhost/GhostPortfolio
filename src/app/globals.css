@@ -2,32 +2,298 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #081b29;
+  color: white;
+}
+.Home {
+  background: url("../../public/dola.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.font {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* HomeLink */
+
+.submitBtn a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.submitBtn a:hover {
+  color: black;
+}
+
+.submitBtn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.submitBtn a:hover::before {
+  width: 100%;
+}
+
+/* HomeLink */
+
+/* HomeLink */
+
+.Home_sci a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.Home_sci a:hover {
+  color: black;
+}
+
+.Home_sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.Home_sci a:hover::before {
+  width: 100%;
+}
+
+/* HomeLink */
+
+/* footerLink */
+
+.footerLink a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.footerLink a:hover {
+  color: black;
+}
+
+.footerLink a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: gray;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.footerLink a:hover::before {
+  width: 100%;
+}
+
+/* footerLink */
+
+/* contactLink */
+
+.contactLink a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.contactLink a:hover {
+  color: black;
+}
+
+.contactLink a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #58ecd1;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.contactLink a:hover::before {
+  width: 100%;
+}
+
+/* contactLink */
+
+/* MobileNavbarLink */
+
+.MobileNavbarLink a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.MobileNavbarLink a:hover {
+  color: black;
+}
+
+.MobileNavbarLink a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #87ceeb;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.MobileNavbarLink a:hover::before {
+  width: 100%;
+}
+
+/* MobileNavbarLink */
+
+.imgHover {
+  transition: transform 0.5s;
+  box-shadow: rgb(40, 40, 40) 10px 10px 20px -4px;
+}
+.imgHover:hover {
+  transform: translateY(-13px);
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-img {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img img {
+  border: 0.2rem solid #00abf0;
+}
+.about-img .circle-spin {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50;
+  left: 10;
+  border-radius: 50%;
+  border-top: 0.2rem solid gray;
+  border-bottom: 0.2rem solid gray;
+  border-left: 0.2rem solid #00abf0;
+  border-right: 0.2rem solid #00abf0;
+}
+
+/* reload Animation */
+
+.siteLogo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.ImHere::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.WhoIm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.WhoImText::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+/* reload Animation */
+
+/* KEY FRAMEWORK */
+@keyframes showRight {
+  100% {
+    width: 0;
   }
+}
+
+.layer {
+  height: 0%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #1396ca);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: height 0.5s;
+}
+.work:hover .layer {
+  height: 70%;
 }
