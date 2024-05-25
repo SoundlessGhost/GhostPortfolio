@@ -41,7 +41,7 @@ const HomeContent = () => {
               <span className="text-[#00abf0] text-[16px]  md:text-[18px] font-extrabold">
                 MongoDB
               </span>
-              . I'm will be responsible for building and maintaining MERN STACK
+              . I'm will be responsible for building and maintaining MERN Stack
               web applications and will play a key role in the development of
               our projects. MERN Stack Developer.
             </p>
