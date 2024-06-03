@@ -3,7 +3,7 @@ import { Box, ChevronsLeftRight, Cog } from "lucide-react";
 
 const Services = () => {
   return (
-    <div className="text-center my-36 font" id="services">
+    <div className="text-center my-20 font" id="services">
       <h2 className="font-bold text-4xl mb-20 WhoImText relative">
         My <span className="text-[#00abf0]"> Services</span>
       </h2>

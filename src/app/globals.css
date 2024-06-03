@@ -12,6 +12,11 @@ body {
   background-color: #081b29;
   color: white;
 }
+
+.scrolled {
+  background-color: #081b29;
+}
+
 .Home {
   background: url("../../public/dola.jpg");
   background-position: center;
@@ -22,161 +27,6 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
-/* HomeLink */
-
-.submitBtn a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-
-.submitBtn a:hover {
-  color: black;
-}
-
-.submitBtn a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #00abf0;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.submitBtn a:hover::before {
-  width: 100%;
-}
-
-/* HomeLink */
-
-/* HomeLink */
-
-.Home_sci a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-
-.Home_sci a:hover {
-  color: black;
-}
-
-.Home_sci a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #00abf0;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.Home_sci a:hover::before {
-  width: 100%;
-}
-
-/* HomeLink */
-
-/* footerLink */
-
-.footerLink a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-
-.footerLink a:hover {
-  color: black;
-}
-
-.footerLink a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: gray;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.footerLink a:hover::before {
-  width: 100%;
-}
-
-/* footerLink */
-
-/* contactLink */
-
-.contactLink a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-
-.contactLink a:hover {
-  color: black;
-}
-
-.contactLink a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #58ecd1;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.contactLink a:hover::before {
-  width: 100%;
-}
-
-/* contactLink */
-
-/* MobileNavbarLink */
-
-.MobileNavbarLink a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
-}
-
-.MobileNavbarLink a:hover {
-  color: black;
-}
-
-.MobileNavbarLink a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #87ceeb;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.MobileNavbarLink a:hover::before {
-  width: 100%;
-}
-
-/* MobileNavbarLink */
 
 .imgHover {
   transition: transform 0.5s;
@@ -296,4 +146,149 @@ body {
 }
 .work:hover .layer {
   height: 70%;
+}
+
+/* SubmitBtn */
+
+.submitBtn a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.submitBtn a:hover {
+  color: black;
+}
+
+.submitBtn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.submitBtn a:hover::before {
+  width: 100%;
+}
+
+/* HomeLink */
+
+.Home_sci a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.Home_sci a:hover {
+  color: black;
+}
+
+.Home_sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.Home_sci a:hover::before {
+  width: 100%;
+}
+
+/* FooterLink */
+
+.footerLink a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.footerLink a:hover {
+  color: black;
+}
+
+.footerLink a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: gray;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.footerLink a:hover::before {
+  width: 100%;
+}
+
+/* ContactLink */
+
+.contactLink a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.contactLink a:hover {
+  color: black;
+}
+
+.contactLink a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #58ecd1;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.contactLink a:hover::before {
+  width: 100%;
+}
+
+/* MobileNavbarLink */
+
+.MobileNavbarLink a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.MobileNavbarLink a:hover {
+  color: black;
+}
+
+.MobileNavbarLink a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #87ceeb;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.MobileNavbarLink a:hover::before {
+  width: 100%;
 }

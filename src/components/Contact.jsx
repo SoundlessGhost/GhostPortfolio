@@ -1,15 +1,14 @@
 "use client";
-import Link from "next/link";
-import React, { useRef } from "react";
 import { BsFillSendFill } from "react-icons/bs";
 import { MdLocalPhone } from "react-icons/md";
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { AiFillInstagram } from "react-icons/ai";
-import ResumeDownloadButton from "./ResumeDownloadButton";
-import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import ResumeDownloadButton from "./ResumeDownloadButton";
 
 const Contact = () => {
   const {
@@ -42,19 +41,22 @@ const Contact = () => {
       });
     reset();
   };
+
   return (
     <div
       className="font WhoImText relative lg:flex items-center justify-evenly my-28 mx-20 block"
       id="contact"
     >
-      <div className="mb-10">
+      <div className="mb-10 flex flex-col">
         <div>
-          <h1 className="font-bold text-4xl">
+          <h1 className="font-bold my-10 text-4xl">
             Contact <span className="text-[#00abf0]">Me</span>
           </h1>
           <div className="flex text-[#00abf0] items-center my-4">
             <BsFillSendFill />
-            <p className="ml-2 text-white">shahedak47mk47@gmail.com</p>
+            <p className="ml-2 text-white text-[14px]">
+              shahedak47mk47@gmail.com
+            </p>
           </div>
           <div className="flex text-[#00abf0] items-center my-4">
             <MdLocalPhone size={20} />
@@ -62,9 +64,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex items-center mt-4 contactLink">
+        <div className="inline-flex items-center mt-4 contactLink">
           <Link
-            className="border-[#58ecd1] rounded-full border-2 mr-4 p-3 text-white "
+            className=" border-[#58ecd1] rounded-full border-2 mr-4 p-3 text-white "
             href="https://www.linkedin.com/in/shahed2247/"
             target="blank"
           >
@@ -126,7 +128,7 @@ const Contact = () => {
               className=" bg-gray-800 border-0 border-b border-t p-4 w-full mb-8"
               placeholder="Leave Your Message ..."
               cols="30"
-              rows="10"
+              rows="5"
             ></textarea>
             <p className="font text-[12px] mt-2 text-red-600">
               {errors.message?.message}

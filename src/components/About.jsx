@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import React from "react";
 
 const About = () => {
   return (
@@ -10,9 +10,7 @@ const About = () => {
       </h1>
 
       <div className="about-img">
-        <Image
-          height={10}
-          width={10}
+        <img
           className="w-[150px] border-4  h-[150px] rounded-full"
           src="/shahed.jpg"
           alt=""

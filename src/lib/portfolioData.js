@@ -1,11 +1,11 @@
 export const portfolios = [
   {
     id: 1,
-    link: "https://worldofrevenue.netlify.app/",
-    img: "/revenue.jpg",
-    title: "World Of Revenue",
+    link: "https://digitalui.netlify.app/",
+    img: "/digitalui.jpg",
+    title: "Digital Ui",
     description:
-      "World of Revenue is an online shopping website. It will help you to buy products online.Gives you a competitive advantage other websites ranking for the same keyword.",
+      "Digital Ui is an online shopping website. It will help you to buy products online.Gives you a competitive advantage other websites ranking for the same keyword.",
   },
   {
     id: 2,
@@ -25,10 +25,10 @@ export const portfolios = [
   },
   {
     id: 4,
-    link: "https://nobodyknows2247.netlify.app/",
-    img: "/nobody.jpg",
-    title: "Nobody Knows",
+    link: "https://worldofrevenue.netlify.app/",
+    img: "/revenue.jpg",
+    title: "World Of Revenue",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab expedita ipsum magni corrupti deleniti placeat eius dolore, quasi aperiam cupiditate.",
+      "World Of Revenue is an online shopping website. It will help you to buy products online.Gives you a competitive advantage other websites ranking for the same keyword.",
   },
 ];
