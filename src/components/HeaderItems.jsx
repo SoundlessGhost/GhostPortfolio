@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeaderItems = () => {
     return (
-        <nav className="hidden lg:block siteLogo relative">
+        <nav className="hidden lg:block relative">
             <Link
               className="ml-4 hover:text-[#00abf0]  text-[#00abf0] hover:bg-slate-800 hover:rounded-md p-4"
               href="#"
@@ -18,9 +18,9 @@ const HeaderItems = () => {
             </Link>
             <Link
               className="ml-4 hover:text-[#00abf0]  hover:bg-slate-800 hover:rounded-md p-4 "
-              href="#portfolio"
+              href="#project"
             >
-              Portfolio
+              Project
             </Link>
             <Link
               className="ml-4 hover:text-[#00abf0]  hover:bg-slate-800 hover:rounded-md p-4 "

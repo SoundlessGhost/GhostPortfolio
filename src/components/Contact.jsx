@@ -9,6 +9,7 @@ import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import ResumeDownloadButton from "./ResumeDownloadButton";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const {
@@ -44,14 +45,24 @@ const Contact = () => {
 
   return (
     <div
-      className="font WhoImText relative lg:flex items-center justify-evenly my-28 mx-20 block"
+      className="font WhoImText relative lg:flex items-center justify-evenly my-28 lg:mx-20 mx-4 block"
       id="contact"
     >
-      <div className="mb-10 flex flex-col">
+      <motion.div
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        className="mb-10 flex flex-col"
+      >
         <div>
-          <h1 className="font-bold my-10 text-4xl">
+          <motion.h1
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: -100, opacity: 0 }}
+            transition={{ duration: 2, delay: 0.5 }}
+            className="font-bold lg:text-start text-center -mt-10 lg:mb-10 mb-20 text-4xl"
+          >
             Contact <span className="text-[#00abf0]">Me</span>
-          </h1>
+          </motion.h1>
           <div className="flex text-[#00abf0] items-center my-4">
             <BsFillSendFill />
             <p className="ml-2 text-white text-[14px]">
@@ -96,9 +107,13 @@ const Contact = () => {
         </div>
 
         <ResumeDownloadButton />
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: 100, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+      >
         <form onSubmit={handleSubmit(sendEmail)}>
           <div className="">
             <input
@@ -144,7 +159,7 @@ const Contact = () => {
             </a>
           </div>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

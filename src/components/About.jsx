@@ -1,28 +1,43 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="about font" id="about">
-      <h1 className="text-4xl font-bold WhoImText relative">
+      <motion.h1
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        className="text-4xl font-bold relative"
+      >
         About <span className="text-[#00abf0]">ME</span>
-      </h1>
+      </motion.h1>
 
-      <div className="about-img">
+      <motion.div
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        className="about-img"
+      >
         <img
           className="w-[150px] border-4  h-[150px] rounded-full"
           src="/shahed.jpg"
           alt=""
         />
         <div className="circle-spin"></div>
-      </div>
+      </motion.div>
 
-      <div>
-        <h3 className="text-center text-3xl text-[#00abf0] mb-6 WhoImText relative">
+      <motion.div
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: 100, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+      >
+        <h3 className="text-center text-3xl text-[#00abf0] mb-6 relative">
           Full Stack Developer
         </h3>
-        <p className="mx-20 WhoImText relative">
+        <p className="mx-20 relative">
           I a'm MERN Stack WEB Developer. I am working with{" "}
           <span className="text-[#00abf0] text-[16px]  md:text-[18px] font-extrabold">
             React Js
@@ -64,7 +79,7 @@ const About = () => {
           focus on learning new technology. My goal is to become A World-Class
           Professional Web Developer.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

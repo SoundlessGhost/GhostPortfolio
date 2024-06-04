@@ -1,11 +1,19 @@
+"use client";
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
     <MaxWidthWrapper>
-      <div className="border-0 border-t border-[#516370] py-10 text-center font ImHere relative">
+      <motion.div
+        whileInView={{ y: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        transition={{ duration: 2, delay: 1 }}
+        className="border-0 border-t border-[#516370] py-10 text-center font ImHere relative"
+      >
         <p>
           Thanks for viewing my portfolio Designed By{" "}
           <span className="text-[#00abf0] font-bold">SHAHED ABID DARPON</span>
@@ -36,7 +44,7 @@ const Footer = () => {
         </div>
 
         <p>Copyright © 2024, All Rights Reserved</p>
-      </div>
+      </motion.div>
     </MaxWidthWrapper>
   );
 };

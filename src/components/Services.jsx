@@ -1,15 +1,27 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import { Box, ChevronsLeftRight, Cog } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <div className="text-center my-20 font" id="services">
-      <h2 className="font-bold text-4xl mb-20 WhoImText relative">
+    <div className="text-center -mt-20 font" id="services">
+      <motion.h1
+        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        className="font-bold text-4xl mb-20 relative"
+      >
         My <span className="text-[#00abf0]"> Services</span>
-      </h2>
+      </motion.h1>
 
-      <div className="lg:flex justify-between mx-20 block ">
-        <div className="p-8 lg:w-[400px] imgHover border border-red-500 rounded-xl mb-10 hover:bg-gray-900">
+      <div className="lg:flex justify-between lg:mx-20 mx-4 block ">
+        <motion.div
+        whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ duration: 2, delay: 0.5 }}
+          className="px-8 lg:w-[400px] imgHover -mt-3  rounded-xl mb-10"
+        >
           <div className="siteLogo relative">
             <ChevronsLeftRight
               size={70}
@@ -22,9 +34,14 @@ const Services = () => {
             Written Code. Skilled in creating professionally designed & website
             templates
           </p>
-        </div>
+        </motion.div>
 
-        <div className="p-8 lg:w-[400px] imgHover border border-[#00abf0] rounded-xl mb-10 hover:bg-gray-900">
+        <motion.div
+        whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 2, delay: 1 }}
+          className="px-8 lg:w-[400px] imgHover  rounded-xl mb-10"
+        >
           <div className="siteLogo relative">
             <Box size={60} className=" text-[#00abf0] w-[100%] mb-4"></Box>
           </div>
@@ -34,9 +51,14 @@ const Services = () => {
             maintaining a website. I can develop your website and make your
             website fast
           </p>
-        </div>
+        </motion.div>
 
-        <div className="p-8 lg:w-[400px] imgHover border border-green-500 rounded-xl mb-10 hover:bg-gray-900">
+        <motion.div
+        whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: 100, opacity: 0 }}
+          transition={{ duration: 2, delay: 1.5 }}
+          className="px-8 lg:w-[400px] imgHover  rounded-xl mb-10"
+        >
           <div className="siteLogo relative">
             <Cog size={60} className="text-green-500 w-[100%] mb-4"></Cog>
           </div>
@@ -47,7 +69,7 @@ const Services = () => {
             Slow loading website it’s the biggest problem for every website. I
             can boost your website’s speed by optimization your website.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

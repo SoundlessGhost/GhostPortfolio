@@ -2,10 +2,10 @@
 import { PiArrowBendRightDownFill } from "react-icons/pi";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { buttonVariants } from "./ui/button";
-import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
@@ -77,7 +77,7 @@ const MobileNav = () => {
 
             <div className="text-white mt-[230px] flex flex-col">
               <Link
-                onClick={() => closeOnCurrent("#")}
+                onClick={() => closeOnCurrent("/")}
                 className={`${buttonVariants({
                   variant: "link",
                 })}`}
@@ -86,7 +86,7 @@ const MobileNav = () => {
                 Home
               </Link>
               <Link
-                onClick={() => closeOnCurrent("#about")}
+                onClick={() => closeOnCurrent("/")}
                 className={`${buttonVariants({
                   variant: "link",
                 })}`}
@@ -95,16 +95,16 @@ const MobileNav = () => {
                 About
               </Link>
               <Link
-                onClick={() => closeOnCurrent("#portfolio")}
+                onClick={() => closeOnCurrent("/")}
                 className={`${buttonVariants({
                   variant: "link",
                 })}`}
-                href="#portfolio"
+                href="#project"
               >
-                Portfolio
+                Project
               </Link>
               <Link
-                onClick={() => closeOnCurrent("#services")}
+                onClick={() => closeOnCurrent("/")}
                 className={`${buttonVariants({
                   variant: "link",
                 })}`}
@@ -113,7 +113,7 @@ const MobileNav = () => {
                 Services
               </Link>
               <Link
-                onClick={() => closeOnCurrent("#contact")}
+                onClick={() => closeOnCurrent("/")}
                 className={`${buttonVariants({
                   variant: "link",
                 })}`}
