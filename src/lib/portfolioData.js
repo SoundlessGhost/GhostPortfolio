@@ -22,16 +22,7 @@ export const portfolios = [
     link: "https://cloneoffacbook.netlify.app/",
     img: "/facebook.jpg",
     title: "Facebook Clone",
-    language: [
-      "HTML5",
-      "CSS3",
-      "ReactJs",
-      "NextJs",
-      "MongoDB",
-      "Firebase",
-      "Express",
-      "Tailwind",
-    ],
+    language: ["HTML5", "CSS3", "ReactJs","Tailwind"],
     description:
       "Helps Google understand the content and relevance of your page to user search queries. Gives you a competitive advantage over other websites ranking for the same keyword.",
   },
