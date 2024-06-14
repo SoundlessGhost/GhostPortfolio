@@ -12,7 +12,7 @@ const Footer = () => {
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 2, delay: 1 }}
-        className="border-0 border-t border-[#516370] py-10 text-center font ImHere relative"
+        className="border-0 border-t overflow-hidden border-[#516370] py-10 text-center font ImHere relative"
       >
         <p>
           Thanks for viewing my portfolio Designed By{" "}

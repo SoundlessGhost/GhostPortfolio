@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <MaxWidthWrapper>
-        <div className="border-0 border-b border-[#516370] flex items-center font-bold justify-between py-6 lg:px-10 text-white font">
+        <div className="border-0 border-b overflow-hidden border-[#516370] flex items-center font-bold justify-between py-6 lg:px-10 text-white font">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}

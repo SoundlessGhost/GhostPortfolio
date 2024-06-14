@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <div className="text-center -mt-20 font" id="services">
+    <div className="text-center overflow-hidden -mt-20 font" id="services">
       <motion.h1
         whileInView={{ x: 0, opacity: 1 }}
         initial={{ x: -100, opacity: 0 }}

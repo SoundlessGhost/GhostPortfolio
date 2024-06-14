@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const HomeContent = () => {
   return (
-    <div className="font Home lg:flex items-center justify-between block mb-20">
+    <div className="font overflow-hidden Home lg:flex items-center justify-between block mb-20">
       <div className="h-[100vh] flex items-center py-0 px-[7%] max-w-[800px] ">
         <section className="Home-Content">
           {/* page text */}

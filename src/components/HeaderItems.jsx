@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeaderItems = () => {
     return (
-        <nav className="hidden lg:block relative">
+        <nav className="hidden lg:block relative overflow-hidden">
             <Link
               className="ml-4 hover:text-[#00abf0]  text-[#00abf0] hover:bg-slate-800 hover:rounded-md p-4"
               href="#"

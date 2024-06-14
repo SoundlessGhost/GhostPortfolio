@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Portfolios = () => {
   return (
-    <div className="text-center my-20 font" id="project">
+    <div className="text-center my-20 font overflow-hidden" id="project">
       <motion.h1
         whileInView={{ x: 0, opacity: 1 }}
         initial={{ x: -100, opacity: 0 }}

@@ -41,7 +41,7 @@ const MobileNav = () => {
 
   return (
     <div>
-      <div className="relative z-40 lg:hidden">
+      <div className="relative z-40 lg:hidden overflow-hidden">
         <div className="fixed inset-0 bg-black bg-opacity-25" />
       </div>
 

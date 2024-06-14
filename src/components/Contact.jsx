@@ -45,7 +45,7 @@ const Contact = () => {
 
   return (
     <div
-      className="font WhoImText relative lg:flex items-center justify-evenly my-28 lg:mx-20 mx-4 block"
+      className="font overflow-hidden WhoImText relative lg:flex items-center justify-evenly my-28 lg:mx-20 mx-4 block"
       id="contact"
     >
       <motion.div
